@@ -163,5 +163,14 @@
       <div>© Amr Lotfy — Laravel & AI Automation Engineer</div>
     </div>
   </footer>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({duration:700, once:true});
+    function submitForm(e){
+      e.preventDefault();
+      document.getElementById('formMsg').textContent = "This is a demo form. To receive messages, deploy to a platform and configure a form backend.";
+      document.getElementById('contactForm').reset();
+    }
+  </script>
 </body>
 </html>
