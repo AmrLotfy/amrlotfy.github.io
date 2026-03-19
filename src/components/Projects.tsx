@@ -4,13 +4,28 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 
-const categories = ["All", "Laravel", "AI & Automation"];
+const categories = ["All", "Laravel", "AI & Automation", "Open Source"];
 
 const projects = [
   {
+    title: "Conan AI — Personal AI Agent Framework",
+    category: "Open Source",
+    tags: ["Open Source", "npm", "AI Agent", "Node.js", "CLI"],
+    description: "Open source Node.js CLI framework for building personal AI agents. Connects to OpenAI, Anthropic, or OpenRouter. Remembers you across sessions, searches the web, reads files, and fires reminders. Local-first, no cloud.",
+    link: "https://github.com/AmrLotfy/Conan-ai",
+    featured: true
+  },
+  {
+    title: "Haiah — Company AI Assistant",
+    category: "AI & Automation",
+    tags: ["Laravel", "AI", "RAG", "Company Project"],
+    description: "Internal AI assistant built with Laravel for company use. Handles intelligent Q&A, automates internal workflows, and integrates with company systems using RAG and LLM APIs.",
+    featured: true
+  },
+  {
     title: "Laravel AI Smart Reply",
-    category: "Laravel",
-    tags: ["Open Source", "AI", "Laravel Package"],
+    category: "Open Source",
+    tags: ["Open Source", "AI", "Laravel Package", "Packagist"],
     description: "Published on Packagist - AI-powered multilingual reply generator for CRM & ERP systems using OpenAI and OpenRouter.",
     link: "https://github.com/amrlotfy/laravel-ai-smart-reply",
     featured: true

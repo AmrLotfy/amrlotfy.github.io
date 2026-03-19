@@ -36,8 +36,8 @@ export const Hero = () => {
           </h1>
 
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            8+ years of experience building high-performance web applications, APIs, and enterprise dashboards. 
-            Specialized in Laravel, AI workflow automations, and scalable backend solutions.
+            8+ years building high-performance web apps, APIs, and enterprise systems.
+            Author of open-source AI tools on npm & Packagist. Building AI agents, RAG systems, and intelligent automation workflows.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>

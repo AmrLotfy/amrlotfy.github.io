@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Code2, Database, Workflow, Zap, Globe, TestTube } from "lucide-react";
+import { Code2, Database, Workflow, Zap, Globe, TestTube, Bot, Package } from "lucide-react";
 
 const skills = [
   {
@@ -9,10 +9,22 @@ const skills = [
     color: "from-red-500 to-orange-500"
   },
   {
+    icon: Bot,
+    title: "AI Agent Development",
+    description: "Building intelligent CLI agents, RAG systems, and LLM-powered tools with OpenAI, Anthropic, and OpenRouter",
+    color: "from-violet-500 to-purple-600"
+  },
+  {
     icon: Workflow,
     title: "n8n Automation",
     description: "Advanced workflow automation, AI agent integration, and business process optimization",
     color: "from-primary to-accent"
+  },
+  {
+    icon: Package,
+    title: "Open Source Packages",
+    description: "Published npm & Packagist packages. Author of Conan AI (Node.js agent framework) and Laravel AI Smart Reply",
+    color: "from-orange-500 to-red-500"
   },
   {
     icon: Database,
@@ -77,7 +89,7 @@ export const Skills = () => {
 
         {/* Additional Skills Tags */}
         <div className="mt-16 flex flex-wrap justify-center gap-3 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-          {['Livewire', 'MySQL', 'Redis', 'REST APIs', 'OpenAI', 'OpenRouter', 'Telegram Bots', 'WhatsApp Integration', 'Power BI'].map((tag, index) => (
+          {['Livewire', 'MySQL', 'Redis', 'REST APIs', 'OpenAI', 'Anthropic Claude', 'OpenRouter', 'RAG Systems', 'Telegram Bots', 'WhatsApp Integration', 'n8n', 'Power BI', 'npm', 'Packagist'].map((tag, index) => (
             <span 
               key={index}
               className="px-4 py-2 rounded-full bg-secondary/50 border border-border text-sm font-medium hover:border-primary hover:bg-primary/10 transition-all duration-300 cursor-default"

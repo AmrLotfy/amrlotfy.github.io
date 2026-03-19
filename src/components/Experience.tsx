@@ -4,13 +4,14 @@ const timeline = [
   {
     type: "work",
     title: "Principal Software Engineer",
-    organization: "Enterprise Platforms",
+    organization: "Hollat",
     period: "2022 - Present",
-    description: "Leading architecture and technical direction for enterprise platforms. Managing cross-functional teams and driving technical innovation.",
+    description: "Leading architecture and technical direction for enterprise platforms. Built Conan AI (open-source npm agent framework) and Haiah (company AI assistant).",
     highlights: [
-      "Led architecture for multi-tenant SaaS platforms",
-      "Implemented AI-powered automation workflows",
-      "Mentored development teams and conducted code reviews"
+      "Built Conan AI — open-source Node.js personal AI agent framework, published on npm",
+      "Built Haiah — internal company AI assistant using Laravel & RAG",
+      "Led architecture for multi-tenant SaaS and ticketing platforms",
+      "Implemented AI-powered automation workflows with n8n and OpenAI"
     ]
   },
   {
