@@ -101,7 +101,7 @@ export const Contact = () => {
               className="font-semibold p-0 h-auto text-foreground hover:text-primary"
               asChild
             >
-              <a href="https://amrlotfy.github.io/Amr-Lotfy-Saleh.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="https://amrlotfy.github.io/amr-lotfy-saleh.pdf" target="_blank" rel="noopener noreferrer">
                 View CV (PDF)
               </a>
             </Button>
