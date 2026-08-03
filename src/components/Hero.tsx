@@ -55,7 +55,7 @@ export const Hero = () => {
               className="border-primary/30 hover:border-primary hover:bg-primary/10"
               asChild
             >
-              <a href="https://amrlotfy.github.io/amr-lotfy-saleh.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="https://amrlotfy.github.io/Amr-Lotfy-Saleh.pdf" target="_blank" rel="noopener noreferrer">
                 Download CV
               </a>
             </Button>
