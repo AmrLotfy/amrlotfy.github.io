@@ -89,7 +89,7 @@ export const Skills = () => {
 
         {/* Additional Skills Tags */}
         <div className="mt-16 flex flex-wrap justify-center gap-3 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
-          {['Livewire', 'MySQL', 'Redis', 'REST APIs', 'OpenAI', 'Anthropic Claude', 'OpenRouter', 'RAG Systems', 'Telegram Bots', 'WhatsApp Integration', 'n8n', 'Power BI', 'npm', 'Packagist'].map((tag, index) => (
+          {['Livewire', 'Inertia.js', 'React', 'Filament', 'MySQL', 'Redis', 'REST APIs', 'Multi-tenant Architecture', 'OpenAI', 'Anthropic Claude', 'OpenRouter', 'RAG Systems', 'Telegram Bots', 'WhatsApp Integration', 'n8n', 'Power BI', 'npm', 'Packagist'].map((tag, index) => (
             <span 
               key={index}
               className="px-4 py-2 rounded-full bg-secondary/50 border border-border text-sm font-medium hover:border-primary hover:bg-primary/10 transition-all duration-300 cursor-default"

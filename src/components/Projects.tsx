@@ -16,6 +16,13 @@ const projects = [
     featured: true
   },
   {
+    title: "Multi-Tenant Appointment Booking SaaS",
+    category: "Laravel",
+    tags: ["Laravel", "Inertia.js", "React", "Multi-tenant", "SaaS"],
+    description: "Multi-tenant Laravel 12 + Inertia/React SaaS for government and enterprise appointment booking (Saudi/GCC market). Tenant-isolated booking engine with concurrency-safe slot locking, citizen self-service via phone-OTP auth, an SMS notification pipeline, staff RBAC, and approval workflows. 100+ automated tests.",
+    featured: true
+  },
+  {
     title: "Haiah — Company AI Assistant",
     category: "AI & Automation",
     tags: ["Laravel", "AI", "RAG", "Company Project"],
