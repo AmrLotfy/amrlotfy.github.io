@@ -13,6 +13,11 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        display: ["Martian Mono", "ui-monospace", "monospace"],
+        body: ["Archivo", "system-ui", "sans-serif"],
+        mono: ["JetBrains Mono", "ui-monospace", "monospace"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -46,6 +51,10 @@ export default {
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
+        },
+        mint: {
+          DEFAULT: "hsl(var(--mint))",
+          foreground: "hsl(var(--mint-foreground))",
         },
       },
       backgroundImage: {
@@ -90,6 +99,10 @@ export default {
         "glow-pulse": {
           "0%, 100%": { opacity: "1" },
           "50%": { opacity: "0.5" }
+        },
+        "blink": {
+          "0%, 49%": { opacity: "1" },
+          "50%, 100%": { opacity: "0" }
         }
       },
       animation: {
@@ -99,7 +112,8 @@ export default {
         "fade-in-up": "fade-in-up 0.8s ease-out",
         "scale-in": "scale-in 0.4s ease-out",
         "gradient-shift": "gradient-shift 8s ease infinite",
-        "glow-pulse": "glow-pulse 3s ease-in-out infinite"
+        "glow-pulse": "glow-pulse 3s ease-in-out infinite",
+        "blink": "blink 1s steps(1) infinite"
       },
     },
   },

@@ -1,126 +1,78 @@
-import { Building2, GraduationCap } from "lucide-react";
-
 const timeline = [
   {
-    type: "work",
-    title: "Principal Software Engineer",
-    organization: "Hollat",
-    period: "2022 - Present",
-    description: "Leading architecture and technical direction for enterprise platforms. Built Conan AI (open-source npm agent framework) and Haiah (company AI assistant).",
-    highlights: [
-      "Built Conan AI — open-source Node.js personal AI agent framework, published on npm",
-      "Built Haiah — internal company AI assistant using Laravel & RAG",
-      "Led architecture for multi-tenant SaaS and ticketing platforms",
-      "Implemented AI-powered automation workflows with n8n and OpenAI"
-    ]
+    period: "Oct 2025 — present",
+    role: "Principal Software Engineer",
+    org: "Hollat",
+    description: "Leading architecture and technical direction for enterprise platforms. Designed and built Haiah, an internal AI assistant.",
   },
   {
-    type: "work",
-    title: "Senior PHP (Laravel) Developer",
-    organization: "Various Clients",
-    period: "2018 - 2022",
-    description: "Developed large-scale ticketing systems, dashboards, and integrated n8n automations for enterprise clients.",
-    highlights: [
-      "Built Hollat.net ticketing platform serving 1000+ users",
-      "Integrated AI chatbots with CRM systems",
-      "Worked with SamaCares, MOT, MEWA, KKESH (KSA)"
-    ]
+    period: "Jan 2021 — Sep 2025",
+    role: "Senior PHP (Laravel) Developer",
+    org: "Hollat",
+    description: "Ticketing platform at enterprise scale; delivered for SamaCares, MOT, MEWA, KKESH.",
   },
   {
-    type: "work",
-    title: "PHP Developer",
-    organization: "eCommerce & Startups",
-    period: "2016 - 2018",
-    description: "Built eCommerce platforms, real estate CRMs, and custom dashboards for various industries.",
-    highlights: [
-      "Developed multiple Laravel-based online stores",
-      "Created custom CRM for real estate lead management",
-      "Implemented REST APIs and third-party integrations"
-    ]
+    period: "Jan 2019 — Jan 2021",
+    role: "PHP (Laravel) Developer",
+    org: "PiTechnologies",
+    description: "Designed dashboards and REST APIs; improved code reusability through modular architecture.",
   },
   {
-    type: "education",
-    title: "Bachelor of Computer Science",
-    organization: "October 6 University",
-    period: "2014 - 2018",
-    description: "Graduated with Excellent grade. Focused on software engineering, algorithms, and database systems.",
-  }
+    period: "Feb 2019 — Mar 2021",
+    role: "Outsource Web Developer",
+    org: "Seamlabs",
+    description: "Created custom dashboards and integrated payment gateways for eCommerce clients.",
+  },
+  {
+    period: "Jan 2019 — Jan 2020",
+    role: "PHP Developer",
+    org: "Sahwaco",
+    description: "Maintained and enhanced the company's real estate management platform.",
+  },
+  {
+    period: "Jul 2017 — Jan 2019",
+    role: "PHP Developer",
+    org: "Smart Touch Solution (STS)",
+    description: "Developed eCommerce, portfolio, and company websites using PHP, Laravel, and WordPress.",
+  },
 ];
+
+const education = {
+  period: "2014 — 2018",
+  role: "Bachelor of Computer Science",
+  org: "October 6 University",
+  description: "Graduated with Excellent grade in the graduation project.",
+};
 
 export const Experience = () => {
   return (
-    <section className="py-24 px-6">
-      <div className="container mx-auto max-w-5xl">
-        <div className="text-center mb-16 space-y-4 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold">
-            Experience & Education
-          </h2>
-          <p className="text-xl text-muted-foreground">
-            8+ years journey in software development
-          </p>
+    <section id="experience" className="py-20 px-6 border-t border-border">
+      <div className="container mx-auto max-w-3xl">
+        <div className="flex items-center gap-3 mb-10 font-mono text-sm text-muted-foreground">
+          <span className="text-primary">$</span>
+          <span>cat experience[].log</span>
+          <span className="flex-1 h-px bg-border" />
         </div>
 
-        <div className="relative">
-          {/* Timeline Line */}
-          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-accent to-primary/20" />
+        <div className="border-l border-border flex flex-col gap-8 pl-7">
+          {timeline.map((item, i) => (
+            <div key={i} className="relative">
+              <span className="absolute -left-[31px] top-1.5 w-2.5 h-2.5 rounded-full bg-background border-2 border-primary" />
+              <div className="font-mono text-xs text-primary mb-1.5">{item.period}</div>
+              <h3 className="font-semibold text-base mb-1">
+                {item.role} <span className="font-normal text-muted-foreground">· {item.org}</span>
+              </h3>
+              <p className="text-sm text-muted-foreground leading-relaxed max-w-lg">{item.description}</p>
+            </div>
+          ))}
 
-          <div className="space-y-12">
-            {timeline.map((item, index) => (
-              <div 
-                key={index}
-                className={`relative flex items-start gap-8 animate-fade-in-up ${
-                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                }`}
-                style={{ animationDelay: `${index * 0.15}s` }}
-              >
-                {/* Timeline Dot */}
-                <div className="absolute left-8 md:left-1/2 w-4 h-4 -ml-2 rounded-full bg-primary shadow-glow z-10" />
-
-                {/* Spacer for desktop */}
-                <div className="hidden md:block md:w-1/2" />
-
-                {/* Content Card */}
-                <div className="ml-20 md:ml-0 md:w-1/2">
-                  <div className="p-6 rounded-xl bg-card/50 backdrop-blur-sm border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-glow group">
-                    <div className="flex items-start gap-3 mb-3">
-                      <div className={`p-2 rounded-lg ${
-                        item.type === 'work' 
-                          ? 'bg-primary/20 text-primary' 
-                          : 'bg-accent/20 text-accent'
-                      }`}>
-                        {item.type === 'work' ? <Building2 className="h-5 w-5" /> : <GraduationCap className="h-5 w-5" />}
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
-                          {item.title}
-                        </h3>
-                        <p className="text-muted-foreground font-medium">
-                          {item.organization}
-                        </p>
-                        <p className="text-sm text-primary/80 mt-1">
-                          {item.period}
-                        </p>
-                      </div>
-                    </div>
-
-                    <p className="text-muted-foreground leading-relaxed mb-3">
-                      {item.description}
-                    </p>
-
-                    {item.highlights && (
-                      <ul className="space-y-2">
-                        {item.highlights.map((highlight, i) => (
-                          <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-                            <span className="text-primary mt-1">•</span>
-                            <span>{highlight}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
-                </div>
-              </div>
-            ))}
+          <div className="relative">
+            <span className="absolute -left-[31px] top-1.5 w-2.5 h-2.5 rounded-full bg-background border-2 border-mint" />
+            <div className="font-mono text-xs text-mint mb-1.5">{education.period}</div>
+            <h3 className="font-semibold text-base mb-1">
+              {education.role} <span className="font-normal text-muted-foreground">· {education.org}</span>
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed max-w-lg">{education.description}</p>
           </div>
         </div>
       </div>

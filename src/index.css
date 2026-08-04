@@ -2,49 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
 All colors MUST be HSL.
 */
 
+@font-face {
+  font-family: 'Archivo';
+  src: url('/fonts/archivo.woff2') format('woff2');
+  font-weight: 400 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/jetbrains-mono.woff2') format('woff2');
+  font-weight: 400 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Martian Mono';
+  src: url('/fonts/martian-mono.woff2') format('woff2');
+  font-weight: 500 700;
+  font-display: swap;
+}
+
 @layer base {
   :root {
-    --background: 220 25% 10%;
-    --foreground: 210 40% 98%;
+    --background: 210 16% 6%;
+    --foreground: 210 14% 90%;
 
-    --card: 220 20% 14%;
-    --card-foreground: 210 40% 98%;
+    --card: 210 14% 9%;
+    --card-foreground: 210 14% 90%;
 
-    --popover: 220 20% 14%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 210 14% 9%;
+    --popover-foreground: 210 14% 90%;
 
-    --primary: 189 94% 55%;
-    --primary-foreground: 220 25% 10%;
+    --primary: 34 87% 63%;
+    --primary-foreground: 25 60% 12%;
 
-    --secondary: 220 18% 20%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 210 12% 13%;
+    --secondary-foreground: 210 14% 90%;
 
-    --muted: 220 18% 20%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 210 12% 13%;
+    --muted-foreground: 216 12% 60%;
 
-    --accent: 189 94% 55%;
-    --accent-foreground: 220 25% 10%;
+    --accent: 34 87% 63%;
+    --accent-foreground: 25 60% 12%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --mint: 156 62% 65%;
+    --mint-foreground: 165 60% 12%;
 
-    --border: 220 18% 25%;
-    --input: 220 18% 20%;
-    --ring: 189 94% 55%;
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 210 14% 90%;
 
-    --radius: 0.75rem;
+    --border: 210 12% 17%;
+    --input: 210 12% 13%;
+    --ring: 34 87% 63%;
+
+    --radius: 0.5rem;
 
     /* Custom gradient stops */
-    --gradient-start: 220 40% 15%;
-    --gradient-end: 220 30% 8%;
-    
+    --gradient-start: 210 16% 9%;
+    --gradient-end: 210 18% 5%;
+
     /* Glow effects */
-    --glow-primary: 189 94% 55%;
-    --glow-secondary: 195 90% 65%;
+    --glow-primary: 34 87% 63%;
+    --glow-secondary: 156 62% 65%;
+
+    --font-display: 'Martian Mono', ui-monospace, monospace;
+    --font-body: 'Archivo', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
   }
 }
 
@@ -55,9 +81,19 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-body);
   }
-  
+
   html {
     scroll-behavior: smooth;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
