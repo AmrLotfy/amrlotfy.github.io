@@ -30,6 +30,15 @@ const projects = [
     featured: true,
   },
   {
+    title: "Laravel Chores",
+    path: "~/laravel-chores",
+    category: "Open Source",
+    tags: ["laravel package", "packagist", "php"],
+    description: "Batched, checkpointed, resumable data operations for Laravel — write only the per-record logic. Safely processes millions of records (backfills, normalization, cleanup) with automatic resume after crashes or deploys. Keyset pagination, per-record failure isolation, zero external dependencies (MySQL, PostgreSQL, SQLite).",
+    link: "https://github.com/AmrLotfy/laravel-chores",
+    featured: true,
+  },
+  {
     title: "Laravel AI Smart Reply",
     path: "~/laravel-ai-smart-reply",
     category: "Open Source",
