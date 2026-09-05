@@ -8,11 +8,11 @@ export const Summary = () => {
           <span className="flex-1 h-px bg-border" />
         </div>
         <p className="text-base leading-relaxed text-muted-foreground max-w-2xl">
-          Senior <span className="text-foreground font-semibold">PHP/Laravel developer</span> and{" "}
+          <span className="text-foreground font-semibold">Principal Software Engineer</span> and{" "}
           <span className="text-foreground font-semibold">AI systems builder</span> with 8+ years shipping
-          high-performance web apps, APIs, and enterprise dashboards. Author of open-source AI tooling on
-          npm and Packagist — currently building a CRM, a multi-tenant SaaS booking platform, and an
-          internal agentic assistant at Hollat.
+          high-performance web apps, APIs, and enterprise dashboards (PHP/Laravel). Author of open-source AI
+          tooling on npm and Packagist — currently building a CRM, a multi-tenant SaaS booking platform, and
+          an internal agentic assistant at Hollat.
         </p>
       </div>
     </section>
