@@ -8,7 +8,7 @@ const lines: Line[] = [
   { kind: "prompt", text: "$ whoami" },
   { kind: "field", key: "name", value: "Amr Lotfy Saleh", big: true },
   { kind: "field", key: "role", value: "Principal Software Engineer" },
-  { kind: "field", key: "stack", value: "Laravel · AI Agents · Multi-tenant SaaS" },
+  { kind: "field", key: "stack", value: "Laravel · Next.js · AI Agents · Multi-tenant SaaS" },
   { kind: "field", key: "based", value: "Giza, Egypt" },
   { kind: "field", key: "status", value: "available for freelance", mint: true },
 ];
