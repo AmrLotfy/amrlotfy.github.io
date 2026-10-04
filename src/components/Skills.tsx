@@ -1,10 +1,10 @@
 const skillGroups: { key: string; items: string[] }[] = [
-  { key: "backend", items: ["PHP", "Laravel", "Laravel Livewire", "Node.js", "Inertia.js", "Filament", "Unit Testing"] },
+  { key: "backend", items: ["PHP", "Laravel", "Node.js", "NestJS", "Inertia.js", "Filament", "Multi-tenant Architecture", "RESTful APIs", "Unit Testing"] },
   { key: "ai", items: ["OpenAI", "Anthropic Claude", "OpenRouter", "RAG Systems", "LLM Agents"] },
   { key: "frontend", items: ["React", "Next.js", "Tailwind", "JavaScript"] },
   { key: "database", items: ["MySQL", "Redis"] },
   { key: "automation", items: ["n8n", "WhatsApp Integration", "Telegram Bots"] },
-  { key: "other", items: ["Multi-tenant Architecture", "REST APIs", "npm", "Packagist"] },
+  { key: "other", items: ["npm", "Packagist"] },
 ];
 
 const highlighted = new Set(["PHP", "Laravel", "RAG Systems", "Anthropic Claude"]);
