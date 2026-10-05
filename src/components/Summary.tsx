@@ -9,10 +9,10 @@ export const Summary = () => {
         </div>
         <p className="text-base leading-relaxed text-muted-foreground max-w-2xl">
           <span className="text-foreground font-semibold">Principal Software Engineer</span> and{" "}
-          <span className="text-foreground font-semibold">AI systems builder</span> with 8+ years shipping
-          high-performance web apps, APIs, and enterprise dashboards (PHP/Laravel). Author of open-source AI
-          tooling on npm and Packagist — currently building a CRM, a multi-tenant SaaS booking platform, and
-          an internal agentic assistant at Hollat.
+          <span className="text-foreground font-semibold">AI systems builder</span> with 8+ years of
+          end-to-end product engineering across high-performance web apps, APIs, and enterprise dashboards.
+          Author of open-source AI tooling on npm and Packagist — currently building a CRM, a multi-tenant
+          SaaS booking platform, and an internal agentic assistant at Hollat.
         </p>
       </div>
     </section>
