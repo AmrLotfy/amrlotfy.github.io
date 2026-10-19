@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { ExternalLink, Github } from "lucide-react";
 
-const categories = ["All", "Laravel", "AI & Automation", "Open Source"];
+const categories = ["All", "Laravel", "Node.js", "AI & Automation", "Open Source"];
 
 const projects = [
   {
     title: "Hollat AI Services",
     path: "~/hollat-ai-services",
-    category: "AI & Automation",
+    categories: ["Node.js", "AI & Automation"],
     tags: ["nestjs", "typescript", "ai", "microservices"],
     description: "Live AI microservices platform that adds AI features to Hollat applications through a versioned REST API. Modular NestJS design on a swappable LLM provider layer, with Zod validation and API-key auth.",
     featured: true,
@@ -15,7 +15,7 @@ const projects = [
   {
     title: "Appointment Booking SaaS",
     path: "~/appointments-saas",
-    category: "Laravel",
+    categories: ["Laravel"],
     tags: ["laravel", "inertia.js", "react", "multi-tenant"],
     description: "Multi-tenant Laravel 12 + Inertia/React SaaS for government and enterprise appointment booking (Saudi/GCC market). Tenant-isolated booking engine with concurrency-safe slot locking, citizen self-service via phone-OTP, an SMS notification pipeline, staff RBAC, and approval workflows. 100+ automated tests.",
     featured: true,
@@ -23,7 +23,7 @@ const projects = [
   {
     title: "Ticketing Management Platform",
     path: "~/hollat-ticketing",
-    category: "Laravel",
+    categories: ["Laravel"],
     tags: ["laravel", "enterprise", "scalable"],
     description: "Enterprise ticketing system for Hollat.net serving thousands of users, with optimized queries and scalable API architecture.",
     featured: true,
@@ -31,14 +31,14 @@ const projects = [
   {
     title: "Multi-tenant SaaS eCommerce Platform",
     path: "~/ecommerce-saas",
-    category: "Laravel",
+    categories: ["Laravel"],
     tags: ["saas", "multi-tenant", "ecommerce"],
     description: "Complete SaaS system for managing online stores with products, orders, and subscription billing.",
   },
   {
     title: "Laravel Chores",
     path: "~/laravel-chores",
-    category: "Open Source",
+    categories: ["Open Source"],
     tags: ["laravel package", "packagist", "php"],
     description: "Batched, checkpointed, resumable data operations for Laravel — write only the per-record logic. Safely processes millions of records (backfills, normalization, cleanup) with automatic resume after crashes or deploys. Keyset pagination, per-record failure isolation, zero external dependencies (MySQL, PostgreSQL, SQLite).",
     link: "https://github.com/AmrLotfy/laravel-chores",
@@ -47,7 +47,7 @@ const projects = [
   {
     title: "Conan AI",
     path: "~/conan-ai",
-    category: "Open Source",
+    categories: ["Node.js", "Open Source"],
     tags: ["npm", "ai agent", "node.js", "cli"],
     description: "Open source Node.js CLI framework for building personal AI agents. Connects to OpenAI, Anthropic, or OpenRouter. Remembers you across sessions, searches the web, reads files, and fires reminders. Local-first, no cloud.",
     link: "https://github.com/AmrLotfy/Conan-ai",
@@ -56,7 +56,7 @@ const projects = [
   {
     title: "Haiah — Company AI Assistant",
     path: "~/haiah",
-    category: "AI & Automation",
+    categories: ["AI & Automation"],
     tags: ["laravel", "ai", "rag", "company project"],
     description: "Internal AI assistant built with Laravel for company use. Handles intelligent Q&A, automates internal workflows, and integrates with company systems using RAG and LLM APIs.",
     featured: true,
@@ -64,7 +64,7 @@ const projects = [
   {
     title: "Laravel AI Smart Reply",
     path: "~/laravel-ai-smart-reply",
-    category: "Open Source",
+    categories: ["Open Source"],
     tags: ["ai", "laravel package", "packagist"],
     description: "Published on Packagist — AI-powered multilingual reply generator for CRM & ERP systems using OpenAI and OpenRouter.",
     link: "https://github.com/amrlotfy/laravel-ai-smart-reply",
@@ -73,42 +73,42 @@ const projects = [
   {
     title: "Telegram Business Card Scanner Bot",
     path: "~/card-scanner-bot",
-    category: "AI & Automation",
+    categories: ["AI & Automation"],
     tags: ["ai", "automation", "n8n"],
     description: "Extracts information from scanned business cards, saves to Excel, and automatically sends meeting invitations.",
   },
   {
     title: "RAG-based WhatsApp Support System",
     path: "~/whatsapp-rag-support",
-    category: "AI & Automation",
+    categories: ["AI & Automation"],
     tags: ["ai", "rag", "whatsapp"],
     description: "Retrieval-Augmented Generation system that provides contextual answers to client WhatsApp messages.",
   },
   {
     title: "CRM AI Chatbot Assistant",
     path: "~/crm-chatbot",
-    category: "AI & Automation",
+    categories: ["AI & Automation"],
     tags: ["ai", "crm", "chatbot"],
     description: "Intelligent chatbot integrated with CRM to help agents complete tasks faster and more efficiently.",
   },
   {
     title: "Dorra Group Database & Dashboard",
     path: "~/dorra-dashboard",
-    category: "Laravel",
+    categories: ["Laravel"],
     tags: ["enterprise", "dashboard", "analytics"],
     description: "Enterprise data system for multiple projects and companies with advanced reporting dashboards.",
   },
   {
     title: "AI Job Matching Workflow",
     path: "~/job-matching-ai",
-    category: "AI & Automation",
+    categories: ["AI & Automation"],
     tags: ["ai", "automation", "matching"],
     description: "Collects job postings, analyzes CVs, ranks matches, and recommends top jobs using AI algorithms.",
   },
   {
     title: "Azura Real Estate CRM",
     path: "~/azura-crm",
-    category: "Laravel",
+    categories: ["Laravel"],
     tags: ["crm", "laravel", "rest api"],
     description: "Custom CRM for lead management with an automated agent rotation system built with Laravel.",
   },
@@ -118,7 +118,7 @@ export const Projects = () => {
   const [activeCategory, setActiveCategory] = useState("All");
 
   const filteredProjects =
-    activeCategory === "All" ? projects : projects.filter((p) => p.category === activeCategory);
+    activeCategory === "All" ? projects : projects.filter((p) => p.categories.includes(activeCategory));
 
   return (
     <section id="work" className="py-20 px-6 border-t border-border">
