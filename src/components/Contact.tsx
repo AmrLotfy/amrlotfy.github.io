@@ -2,7 +2,7 @@ const links = [
   { label: "amrlotfy07@gmail.com", href: "mailto:amrlotfy07@gmail.com" },
   { label: "whatsapp", href: "https://wa.me/201006754051" },
   { label: "github.com/amrlotfy", href: "https://github.com/amrlotfy" },
-  { label: "linkedin", href: "https://www.linkedin.com/in/amr-lotfy-saleh-09438b113/" },
+  { label: "linkedin", href: "https://www.linkedin.com/in/amr-lotfy-saleh/" },
 ];
 
 export const Contact = () => {
