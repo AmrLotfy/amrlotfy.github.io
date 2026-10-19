@@ -5,6 +5,37 @@ const categories = ["All", "Laravel", "AI & Automation", "Open Source"];
 
 const projects = [
   {
+    title: "Hollat AI Services",
+    path: "~/hollat-ai-services",
+    category: "AI & Automation",
+    tags: ["nestjs", "typescript", "ai", "microservices"],
+    description: "Live AI microservices platform that adds AI features to Hollat applications through a versioned REST API. Modular NestJS design on a swappable LLM provider layer, with Zod validation and API-key auth.",
+    featured: true,
+  },
+  {
+    title: "Appointment Booking SaaS",
+    path: "~/appointments-saas",
+    category: "Laravel",
+    tags: ["laravel", "inertia.js", "react", "multi-tenant"],
+    description: "Multi-tenant Laravel 12 + Inertia/React SaaS for government and enterprise appointment booking (Saudi/GCC market). Tenant-isolated booking engine with concurrency-safe slot locking, citizen self-service via phone-OTP, an SMS notification pipeline, staff RBAC, and approval workflows. 100+ automated tests.",
+    featured: true,
+  },
+  {
+    title: "Ticketing Management Platform",
+    path: "~/hollat-ticketing",
+    category: "Laravel",
+    tags: ["laravel", "enterprise", "scalable"],
+    description: "Enterprise ticketing system for Hollat.net serving thousands of users, with optimized queries and scalable API architecture.",
+    featured: true,
+  },
+  {
+    title: "Multi-tenant SaaS eCommerce Platform",
+    path: "~/ecommerce-saas",
+    category: "Laravel",
+    tags: ["saas", "multi-tenant", "ecommerce"],
+    description: "Complete SaaS system for managing online stores with products, orders, and subscription billing.",
+  },
+  {
     title: "Laravel Chores",
     path: "~/laravel-chores",
     category: "Open Source",
@@ -20,14 +51,6 @@ const projects = [
     tags: ["npm", "ai agent", "node.js", "cli"],
     description: "Open source Node.js CLI framework for building personal AI agents. Connects to OpenAI, Anthropic, or OpenRouter. Remembers you across sessions, searches the web, reads files, and fires reminders. Local-first, no cloud.",
     link: "https://github.com/AmrLotfy/Conan-ai",
-    featured: true,
-  },
-  {
-    title: "Appointment Booking SaaS",
-    path: "~/appointments-saas",
-    category: "Laravel",
-    tags: ["laravel", "inertia.js", "react", "multi-tenant"],
-    description: "Multi-tenant Laravel 12 + Inertia/React SaaS for government and enterprise appointment booking (Saudi/GCC market). Tenant-isolated booking engine with concurrency-safe slot locking, citizen self-service via phone-OTP, an SMS notification pipeline, staff RBAC, and approval workflows. 100+ automated tests.",
     featured: true,
   },
   {
@@ -48,14 +71,6 @@ const projects = [
     featured: true,
   },
   {
-    title: "Ticketing Management Platform",
-    path: "~/hollat-ticketing",
-    category: "Laravel",
-    tags: ["laravel", "enterprise", "scalable"],
-    description: "Enterprise ticketing system for Hollat.net serving thousands of users, with optimized queries and scalable API architecture.",
-    featured: true,
-  },
-  {
     title: "Telegram Business Card Scanner Bot",
     path: "~/card-scanner-bot",
     category: "AI & Automation",
@@ -68,13 +83,6 @@ const projects = [
     category: "AI & Automation",
     tags: ["ai", "rag", "whatsapp"],
     description: "Retrieval-Augmented Generation system that provides contextual answers to client WhatsApp messages.",
-  },
-  {
-    title: "Multi-tenant SaaS eCommerce Platform",
-    path: "~/ecommerce-saas",
-    category: "Laravel",
-    tags: ["saas", "multi-tenant", "ecommerce"],
-    description: "Complete SaaS system for managing online stores with products, orders, and subscription billing.",
   },
   {
     title: "CRM AI Chatbot Assistant",
